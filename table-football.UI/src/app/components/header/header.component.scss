@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    background: #d3d3d3;
+    width: 100%;
+    height: 70px;
+
+    .header__left {
+        width: 50%;
+    }
+
+    .header__right {
+        float: right;
+        width: 50%;
+    }
+}
