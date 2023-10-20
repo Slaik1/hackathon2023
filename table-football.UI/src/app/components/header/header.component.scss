@@ -6,12 +6,20 @@
     width: 100%;
     height: 70px;
 
-    .header__left {
-        width: 50%;
-    }
+    .header__content {
+        display: flex;
+        width: 1140px;
+        max-width: 1140px;
 
-    .header__right {
-        float: right;
-        width: 50%;
+        .navbar {
+
+
+            .navbar__link {
+                color: #172C41;
+                font-size: 18px;
+                font-weight: 500;
+                font-style: normal;
+            }
+        }
     }
 }
