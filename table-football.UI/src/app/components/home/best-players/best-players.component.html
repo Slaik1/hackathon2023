@@ -1,9 +1,12 @@
 <section class="list_wrapper" *ngIf="users.length != 0; else errorBlock">
+    <label>Тор играков</label>
     <div *ngFor="let user of users; let i = index">
         <div class="row_wrapper">
             <p>{{user.avatarPath}}</p>
-            <p>{{user.userName}}</p>
-            <p>{{user.points}}</p>
+            <div class="info">
+                <p>{{user.userName}}</p>
+                <p>{{user.points}}</p>
+            </div>          
           </div>
     </div>
 </section>
