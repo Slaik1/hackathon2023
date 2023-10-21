@@ -11,7 +11,7 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class RegisterComponent {
   regAccountModel: RegAccountModel = {
-    userName: '',
+    username: '',
     password: '',
     email: '',
   }
