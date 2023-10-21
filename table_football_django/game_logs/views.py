@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.http import JsonResponse
+from .models import Profile
+from .serializers import ProfileSerializer
 
-# Create your views here.
+
+def foo(request):
+    pass
