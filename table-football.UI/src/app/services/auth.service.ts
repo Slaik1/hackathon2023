@@ -24,14 +24,14 @@ export class AuthService {
     return this.http.post(this.baseApiUrl + '/Register', account, )
   }
 
-  accountConfirm() {
+  confirm() {
     var headers = this.headersInit();
-    return this.http.get<UserModel>(this.baseApiUrl + '/AccountConfirm', { headers: headers });
+    return this.http.post<UserModel>(this.baseApiUrl + '/Confirm', { headers: headers });
   }
 
   logout() {
     var headers = this.headersInit();
-    return this.http.get<UserModel>(this.baseApiUrl + '/Logout', { headers: headers });
+    return this.http.post<UserModel>(this.baseApiUrl + '/Logout', { headers: headers });
   }
 
   headersInit(): HttpHeaders {

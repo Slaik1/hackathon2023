@@ -7,7 +7,7 @@ import { environment } from 'src/environment';
   providedIn: 'root'
 })
 export class GameService {
-  baseApiUrl: string = environment.baseApiUrl; // + '/game';
+  baseApiUrl: string = environment.baseApiUrl + '/game';
 
   constructor(
     private readonly authService: AuthService,
@@ -15,6 +15,6 @@ export class GameService {
   ) { }
 
   getGames() {
-      return this.http.get(this.baseApiUrl + '/games'); //getGames
+      return this.http.get(this.baseApiUrl + '/getGames');
   }
 }
