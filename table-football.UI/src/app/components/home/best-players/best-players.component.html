@@ -1,1 +1,16 @@
-<p>best-players works!</p>
+<section class="list_wrapper" *ngIf="users.length != 0; else errorBlock">
+    <div *ngFor="let game of users; let i = index">
+        <div class="row_wrapper">
+            <p>{{users[i].avatarPath}}</p>
+            <p>{{users[i].userName}}</p>
+            <p>{{users[i].points}}</p>
+          </div>
+    </div>
+</section>
+<ng-template #errorBlock>
+    <section class="list_wrapper">
+        <div class="match_wrapper" >
+            <p>Игроков не найдено</p>
+        </div>
+    </section>
+</ng-template>
