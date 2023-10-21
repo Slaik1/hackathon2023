@@ -3,7 +3,7 @@
       "target": "https://65330bf0d80bd20280f63c50.mockapi.io",
       "secure": false,
       "pathRewrite": {
-              "^/api": ""
+              "^/baseApi": ""
           }
     }
 }
