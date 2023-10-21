@@ -3,6 +3,5 @@ export interface UserModel {
     userName: string,
     avatarPath: string,
     points: number,
-    gameId: number,
     dataReg: string
 }
