@@ -20,6 +20,10 @@
 
       svg {
         margin-right: 15px;
+
+        &.active {
+          rotate: 90deg;
+        }
       }
 
       .title_wrapper {
@@ -94,8 +98,18 @@
       img {
         width: 50px;
         height: 50px;
-        border-radius: 30px;
+        border-radius: 50px;
         cursor: pointer;
+        transition: all 0.3s ease;
+
+        &.active {
+          outline: 2px solid #2DCC70;
+        }
+
+        &:hover {
+          width: 70px;
+          height:70px;
+        }
       }
     }
   }
