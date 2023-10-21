@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { GameModel } from 'src/app/interfaces/game.model';
 
 @Component({
   selector: 'app-game',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./game.component.scss']
 })
 export class GameComponent {
+  @Input() game!: GameModel;
 
-}
+  constructor() { }
+
+  ngOnInit(): void {
+    console.log(this.game);
+  }
+};

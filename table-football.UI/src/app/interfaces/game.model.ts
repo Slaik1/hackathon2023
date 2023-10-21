@@ -5,6 +5,6 @@ export interface GameModel {
     slots: number,
     status: string | null,
     currentRound: number | null,
-    teams: [[number, number | null], ...[number, number | null][]], //number - userId
-    logGameId: number | null
+    teams: [[number, number], ...[number, number][]], //number - userId
+    logGameId: number
 }
