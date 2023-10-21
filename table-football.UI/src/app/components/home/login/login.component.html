@@ -7,25 +7,11 @@
     <form #form="ngForm" (ngSubmit)="onSubmit()">
       <label for="userName" class="form-label">Логин</label>
       <input type="text" id="userName" class="form-control" [(ngModel)]="loginAccountModel.userName"
-      #userName="ngModel" placeholder="Имя пользователя" name="userName" required minlength="3">
-      <div *ngIf="userName.invalid && (userName.dirty || userName.touched)" class="alert">
-          <div *ngIf="userName.errors?.['required']">
-              Поле обязательно для заполнения!
-          </div>
-          <div *ngIf="userName.errors?.['minlength']">
-              Имя пользователя должно содержать не менее 3 символов!
-          </div>
-        </div>
+      #userName="ngModel" placeholder="Имя пользователя" name="userName">
+
       <input type="password" id="password" class="form-control" [(ngModel)]="loginAccountModel.password"
-        #password="ngModel" placeholder="Пароль" name="password" required minlength="4">
-      <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert">
-          <div *ngIf="password.errors?.['required']">
-              Поле обязательно для заполнения!
-          </div>
-          <div *ngIf="password.errors?.['minlength']">
-              Пароль должен содержать не менее 4 символов!
-          </div>
-      </div>
+        #password="ngModel" placeholder="Пароль" name="password">
+
       <button class="confirm_btn" type="submit">Войти</button>
       <p class="register_question">Ещё нет аккаунта?</p>
       <a class="register">Зарегистрироваться</a>
