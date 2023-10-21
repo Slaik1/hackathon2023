@@ -15,7 +15,7 @@ constructor(
 ) {}
 
   ngOnInit(): void {
-    this.authService.accountConfirm()
+    this.authService.confirm()
     .subscribe({
       next: (response: any) => {
         console.log(response);
