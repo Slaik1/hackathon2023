@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { GameModel } from 'src/app/interfaces/game.model';
 import { GameService } from 'src/app/services/game.service';
 
@@ -14,7 +14,6 @@ export class GameListComponent {
     private gameService: GameService,
     ) { }
 
-
   ngOnInit(): void {
     this.getGames();
   }
@@ -29,10 +28,8 @@ export class GameListComponent {
             this.games.push(response[i]);
           }
         }
-      console.log(this.games);
       },
       error: (response) => console.log(response)
     });
-
   }
 }
