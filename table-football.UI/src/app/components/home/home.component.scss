@@ -7,13 +7,15 @@ body {
   margin: 0 auto;
 }
 
-.content {
+.row {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  padding-bottom: 30px;
 }
 
-.center {
+.col {
   display: flex;
   flex-direction: column;
+  padding: 0 10px 0 10px;
 }

@@ -6,13 +6,13 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
-  baseApiUrl: string = environment.baseApiUrl + '/account';
+  baseApiUrl: string = environment.baseApiUrl; // + '/account';
 
   constructor(
     private http: HttpClient,
   ) { }
 
   getTopUsers() {
-      return this.http.get(this.baseApiUrl + '/users');
+      return this.http.get(this.baseApiUrl + '/users'); //getTopUsers
   }
 }
