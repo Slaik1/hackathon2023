@@ -1,0 +1,45 @@
+.wrapper {
+  width: 300px;
+  height: 331px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px;
+  background: #fff;
+  border-radius: 7px;
+
+  .nick {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #959FA8;
+  }
+
+  img {
+    width: 152px;
+    height: 152px;
+    border-radius: 70px;
+    margin-bottom: 20px;
+  }
+
+  .rating {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    p {
+      font-size: 24px;
+      color: #959FA8;
+    }
+
+    svg {
+      width: 37px;
+      height: 37px;
+    }
+  }
+
+
+
+
+
+}
