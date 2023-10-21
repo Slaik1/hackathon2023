@@ -1,57 +1,76 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFF;
+  height: 85px;
+  padding: 25px;
+  border-radius: 5px;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 15px;
+    }
+
+    .title_wrapper {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      text-decoration: none;
+
+      .title {
+        color: #2DCC70;
+        font-size: 24px;
+        font-weight: 500;
+        font-style: normal;
+        margin-bottom: 5px;
+        transition: all 0.3s ease;
+      }
+
+      p {
+        font-size: 14px;
+        color: #A0A8B1;
+      }
+
+      &:hover {
+        .title {
+          color: #208c4e;
+        }
+      }
+    }
+  }
+
+  .navbar {
     display: flex;
     justify-content: center;
-    background: #FFF;
-    height: 70px;
 
-    .header__content {
-        display: flex;
-        width: 100%;
+    .navbar__link {
+      color: #A0A8B1;
+      font-size: 18px;
+      font-weight: 500;
+      font-style: normal;
+      margin: 25px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        color: #7a7b7c;
+      }
 
-        .logo {
-            display: flex;
-            justify-content: left;
-            width: 33%;
-
-            svg {
-                padding: 3px;
-            }
-
-            a {
-                color: #172C41;
-                font-size: 18px;
-                font-weight: 500;
-                font-style: normal;
-                margin: 25px;
-            }
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: center;
-            width: 34%;
-
-            .navbar__link {
-                color: #A0A8B1;
-                font-size: 18px;
-                font-weight: 500;
-                font-style: normal;
-                margin: 25px;
-
-                .active {
-                    color: #172C41;
-                }
-            }
-        }
-
-        .avatar {
-            display: flex;
-            justify-content: right;
-            width: 33%;
-
-            svg {
-                padding: 3px;
-            }
-        }
+      .active {
+        color: #172C41;
+      }
     }
+  }
+
+  .avatar {
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 30px;
+    }
+  }
 }
