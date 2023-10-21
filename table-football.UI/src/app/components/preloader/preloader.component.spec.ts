@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MatchListComponent } from './match-list.component';
+import { PreloaderComponent } from './preloader.component';
 
-describe('MatchListComponent', () => {
-  let component: MatchListComponent;
-  let fixture: ComponentFixture<MatchListComponent>;
+describe('PreloaderComponent', () => {
+  let component: PreloaderComponent;
+  let fixture: ComponentFixture<PreloaderComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MatchListComponent]
+      declarations: [PreloaderComponent]
     });
-    fixture = TestBed.createComponent(MatchListComponent);
+    fixture = TestBed.createComponent(PreloaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

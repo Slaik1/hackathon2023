@@ -1,76 +1,85 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #FFF;
-  height: 85px;
-  padding: 25px;
-  border-radius: 5px;
+.container {
+  width: 100%;
+  background: #fff;
 
-  .logo {
+  .header {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    background: #FFF;
+    height: 85px;
+    padding: 25px;
+    border-radius: 5px;
 
-    svg {
-      margin-right: 15px;
-    }
-
-    .title_wrapper {
+    .logo {
       display: flex;
-      flex-direction: column;
-      cursor: pointer;
-      text-decoration: none;
+      align-items: center;
 
-      .title {
-        color: #2DCC70;
-        font-size: 24px;
-        font-weight: 500;
-        font-style: normal;
-        margin-bottom: 5px;
-        transition: all 0.3s ease;
+      svg {
+        margin-right: 15px;
       }
 
-      p {
-        font-size: 14px;
-        color: #A0A8B1;
-      }
+      .title_wrapper {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        text-decoration: none;
 
-      &:hover {
         .title {
-          color: #208c4e;
+          color: #2DCC70;
+          font-size: 24px;
+          font-weight: 500;
+          font-style: normal;
+          margin-bottom: 5px;
+          transition: all 0.3s ease;
+        }
+
+        p {
+          font-size: 14px;
+          color: #A0A8B1;
+        }
+
+        &:hover {
+          .title {
+            color: #208c4e;
+          }
         }
       }
     }
-  }
 
-  .navbar {
-    display: flex;
-    justify-content: center;
+    .navbar {
+      display: flex;
+      justify-content: center;
 
-    .navbar__link {
-      color: #A0A8B1;
-      font-size: 18px;
-      font-weight: 500;
-      font-style: normal;
-      margin: 25px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      &:hover {
-        color: #7a7b7c;
-      }
+      .navbar__link {
+        color: #A0A8B1;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        margin: 25px;
+        cursor: pointer;
 
-      .active {
-        color: #172C41;
+        a {
+          text-decoration: none;
+          color: #A0A8B1;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: #7a7b7c;
+          }
+        }
       }
     }
-  }
 
-  .avatar {
+    .avatar {
 
-    img {
-      width: 50px;
-      height: 50px;
-      border-radius: 30px;
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+      }
     }
   }
 }
