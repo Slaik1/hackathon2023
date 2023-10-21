@@ -21,6 +21,8 @@ import { StatisticComponent } from './components/cabinet/user-panel/statistic/st
 import { BestPlayersComponent } from './components/home/best-players/best-players.component';
 import { CreateGameComponent } from './components/home/create-game/create-game.component';
 import { UserInfoComponent } from './components/home/user-info/user-info.component';
+import { TeamComponent } from './components/cabinet/user-panel/team/team.component';
+import { GameDetailsComponent } from './components/home/game-details/game-details.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { UserInfoComponent } from './components/home/user-info/user-info.compone
     BestPlayersComponent,
     CreateGameComponent,
     UserInfoComponent,
+    TeamComponent,
+    GameDetailsComponent,
   ],
   imports: [
     BrowserModule,
