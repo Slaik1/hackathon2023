@@ -1,9 +1,9 @@
 <section class="list_wrapper" *ngIf="users.length != 0; else errorBlock">
-    <div *ngFor="let game of users; let i = index">
+    <div *ngFor="let user of users; let i = index">
         <div class="row_wrapper">
-            <p>{{users[i].avatarPath}}</p>
-            <p>{{users[i].userName}}</p>
-            <p>{{users[i].points}}</p>
+            <p>{{user.avatarPath}}</p>
+            <p>{{user.userName}}</p>
+            <p>{{user.points}}</p>
           </div>
     </div>
 </section>

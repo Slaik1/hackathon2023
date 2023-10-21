@@ -14,7 +14,11 @@ export class BestPlayersComponent {
     private userService: UserService,
     ) { }
 
-  getGames() {
+    ngOnInit(): void {
+      this.getTopUsers();
+    }
+
+  getTopUsers() {
     this.userService.getTopUsers()
     .subscribe({
       next: (response: any) => {
