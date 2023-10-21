@@ -17,6 +17,9 @@ import { UserProfileComponent } from './components/cabinet/user-profile/user-pro
 import { UserPanelComponent } from './components/cabinet/user-panel/user-panel.component';
 import { SettingsComponent } from './components/cabinet/user-panel/settings/settings.component';
 import { StatisticComponent } from './components/cabinet/user-panel/statistic/statistic.component';
+import { BestPlayersComponent } from './components/home/best-players/best-players.component';
+import { CreateGameComponent } from './components/home/create-game/create-game.component';
+import { UserInfoComponent } from './components/home/user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { StatisticComponent } from './components/cabinet/user-panel/statistic/st
     UserProfileComponent,
     UserPanelComponent,
     SettingsComponent,
-    StatisticComponent
+    StatisticComponent,
+    BestPlayersComponent,
+    CreateGameComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
