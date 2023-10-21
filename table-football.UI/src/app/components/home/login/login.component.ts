@@ -11,7 +11,7 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LoginComponent {
   loginAccountModel: LoginAccountModel = {
-    userName: '',
+    username: '',
     password: '',
   }
   constructor (

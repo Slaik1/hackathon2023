@@ -6,7 +6,7 @@
     <h1>Войти</h1>
     <form #form="ngForm" (ngSubmit)="onSubmit()">
       <label for="userName" class="form-label">Логин</label>
-      <input type="text" id="userName" class="form-control" [(ngModel)]="loginAccountModel.userName"
+      <input type="text" id="userName" class="form-control" [(ngModel)]="loginAccountModel.username"
       #userName="ngModel" placeholder="Имя пользователя" name="userName" required minlength="3">
       <div *ngIf="userName.invalid && (userName.dirty || userName.touched)" class="alert">
           <div *ngIf="userName.errors?.['required']">
