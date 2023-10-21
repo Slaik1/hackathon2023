@@ -1,8 +1,7 @@
 <div class="match_wrapper" *ngIf="game != null; else errorBlock">
   <p>{{game.name}}</p>
   <p>{{game.status}}</p>
-  <p>{{game.mode}}</p>
-  <p>{{game.slots}}</p>
+  <p>1/{{game.slots}}</p>
   <button class="info_btn">Подробности</button>
 </div>
 <ng-template #errorBlock>

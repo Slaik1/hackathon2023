@@ -9,9 +9,11 @@ import { GameService } from 'src/app/services/game.service';
 })
 export class GameListComponent {
   games: GameModel[] = [];
+
   constructor(
     private gameService: GameService,
     ) { }
+
 
   ngOnInit(): void {
     this.getGames();
@@ -31,6 +33,6 @@ export class GameListComponent {
       },
       error: (response) => console.log(response)
     });
-    
+
   }
 }

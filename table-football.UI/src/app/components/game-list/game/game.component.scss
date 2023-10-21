@@ -15,6 +15,11 @@
   p {
     color: #959FA8;
     font-size: 17px;
+    width: 20%;
+
+    &:first-child {
+      width: 50%;
+    }
   }
 
   .info_btn {
