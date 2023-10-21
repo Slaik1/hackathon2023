@@ -7,7 +7,7 @@ import { GameModel } from 'src/app/interfaces/game.model';
   styleUrls: ['./game.component.scss']
 })
 export class GameComponent {
-  @Input() game!: GameModel;
+  @Input() game!: GameModel | null;
 
   constructor() { }
 
