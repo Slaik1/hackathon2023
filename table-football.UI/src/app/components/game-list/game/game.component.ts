@@ -8,10 +8,4 @@ import { GameModel } from 'src/app/interfaces/game.model';
 })
 export class GameComponent {
   @Input() game!: GameModel | null;
-
-  constructor() { }
-
-  ngOnInit(): void {
-    console.log(this.game);
-  }
 };
