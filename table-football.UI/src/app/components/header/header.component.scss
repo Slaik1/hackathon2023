@@ -28,7 +28,7 @@
 
       .title_wrapper {
         display: flex;
-        flex-direction: column;
+        align-items: center;
         cursor: pointer;
         text-decoration: none;
 
@@ -39,6 +39,10 @@
           font-style: normal;
           margin-bottom: 5px;
           transition: all 0.3s ease;
+        }
+
+        .info {
+
         }
 
         p {

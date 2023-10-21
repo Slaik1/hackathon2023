@@ -1,0 +1,35 @@
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 36px;
+  background: #fff;
+  max-width: 300px;
+
+  p {
+    margin-bottom: 41px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #959FA8;
+  }
+
+  .info_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: none;
+    border-radius: 7px;
+    color: #FFF;
+    background: #2DCC70;
+    cursor: pointer;
+    transition: 0.4s ease;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    &:hover {
+      background: #22a65a;
+    }
+  }
+
+}
