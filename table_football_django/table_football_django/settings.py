@@ -127,7 +127,7 @@ USE_I18N = True
 USE_TZ = True
 
 # CORS settings
-CORS_ORIGIN_WHITELIST = ['http://localhost:4200']
+CORS_ORIGIN_WHITELIST = [os.getenv('FRONT_SERVER')]
 
 
 # Static files (CSS, JavaScript, Images)
