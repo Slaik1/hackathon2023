@@ -16,10 +16,10 @@ export class GameListComponent {
 
 
   ngOnInit(): void {
-    this.getGames(1);
+    this.getGames();
   }
 
-  getGames(pageNum : number) {
+  getGames() {
     this.games = [];
     this.gameService.getGames()
     .subscribe({

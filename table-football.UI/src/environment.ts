@@ -1,4 +1,3 @@
 export const environment = {
-    production: false,
-    baseApiUrl: '/baseApi'
+    baseApiUrl: 'https://65330bf0d80bd20280f63c50.mockapi.io'
 };
