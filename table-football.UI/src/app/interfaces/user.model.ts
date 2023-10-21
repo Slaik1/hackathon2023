@@ -1,7 +1,7 @@
 export interface UserModel {
-    userId: number,
-    userName: string,
-    avatarPath: string,
+    user_id: number,
+    username: string,
+    avatar_path: string,
     points: number,
-    dataReg: string
+    data_register: string
 }
