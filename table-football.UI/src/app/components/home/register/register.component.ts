@@ -26,9 +26,9 @@ export class RegisterComponent {
     this.authService.register(this.regAccountModel)
     .subscribe({
       next: (response: any) => {
-        if (response.accessToken)
+        if (response.access_token)
         {
-          localStorage.setItem('access_token', response.accessToken);
+          localStorage.setItem('access_token', response.access_token);
         }
         this.router.navigate(['']);
       },

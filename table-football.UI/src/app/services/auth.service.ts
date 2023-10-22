@@ -28,8 +28,8 @@ export class AuthService {
     this.http.post<UserModel>(this.baseApiUrl + '/Confirm', { headers: headers })
     .subscribe({
       next: (response: any) => {
-        console.log(response);
-        if (response.userName)
+        console.log(response.status);
+        if (response.status)
           return true
         else
           return false
@@ -46,7 +46,7 @@ export class AuthService {
   }
 
   headersInit(): HttpHeaders {
-    const accessToken = localStorage.getItem('accessToken');
+    const accessToken = localStorage.getItem('access_token');
     if (accessToken)
       var headers = new HttpHeaders().set('Authorization', 'Bearer ' + accessToken);
     else

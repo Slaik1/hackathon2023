@@ -29,7 +29,7 @@ export class StatisticComponent {
       next: (response: any) => {
         if (response) {
           for (var i = 0; i < response.length; i++) {
-
+            //сравнение
             this.games.push(response[i]);
           }
         }
