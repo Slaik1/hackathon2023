@@ -5,7 +5,7 @@
     </svg>
     <h1>Войти</h1>
     <form #form="ngForm" (ngSubmit)="onSubmit()">
-      <label for="userName" class="form-label">Логин</label>
+      <!-- <label for="userName" class="form-label">Логин</label> -->
       <input type="text" id="userName" class="form-control" [(ngModel)]="loginAccountModel.username"
       #userName="ngModel" placeholder="Имя пользователя" name="userName" required minlength="3">
       <div *ngIf="userName.invalid && (userName.dirty || userName.touched)" class="alert">
@@ -25,10 +25,14 @@
           <div *ngIf="password.errors?.['minlength']">
               Пароль должен содержать не менее 4 символов!
           </div>
-      </div> //валидацию проверить
-      <button class="confirm_btn" type="submit">Войти</button>
-      <p class="register_question">Ещё нет аккаунта?</p>
-      <a class="register">Зарегистрироваться</a>
+      </div> 
+      <!-- валидацию проверить -->
+      <div class="enter">
+        <button class="confirm_btn" type="submit">Войти</button>
+        <p class="register_question">Ещё нет аккаунта?</p>
+        <a class="register">Зарегистрироваться</a>
+      </div>
+      
   </form>
   </section>
 </div>
