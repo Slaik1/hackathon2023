@@ -32,12 +32,11 @@ export class UserInfoComponent {
       next: (response: any) => {
         if (response) {
           for (var i = 0; i < response.length; i++) {
-            this.username = response;
+            this.user = response;
           }
         }
       },
       error: (response) => console.log(response)
     });
   }
-  
 }
