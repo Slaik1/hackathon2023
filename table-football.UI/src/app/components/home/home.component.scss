@@ -1,6 +1,3 @@
-body {
-    background: #2B4450;
-}
 
 .container {
   max-width: 1440px;
@@ -11,11 +8,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.col {
-  display: flex;
-  flex-direction: column;
-  padding: 0 10px 0 10px;
-}
+
