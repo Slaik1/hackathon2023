@@ -14,7 +14,7 @@
             </div>
         </div>
     <input type="password" id="password" class="input" [(ngModel)]="regAccountModel.password"
-      #password="ngModel" placeholder="Пароль" required minlength="4">
+      #password="ngModel" placeholder="Email" required minlength="4">
     <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert">
         <div *ngIf="password.errors?.['required']">
             Поле обязательно для заполнения!
@@ -23,10 +23,16 @@
             Пароль должен содержать не менее 4 символов!
         </div>
     </div>
+    <input type="text" id="userName" class="input" [(ngModel)]="regAccountModel.username"
+        #userName="ngModel" placeholder="Пароль" required minlength="3">
 
+    <input type="text" id="userName" class="input" [(ngModel)]="regAccountModel.username"
+    #userName="ngModel" placeholder="Повторить пароль" required minlength="3">
+    <div class="regist">
     <button class="confirm_btn">Зарегистрироваться</button>
     <p class="register_question">Уже есть аккаунт?</p>
     <p class="register">Войти</p>
+    </div>
 </form>
   </section>
 </div>

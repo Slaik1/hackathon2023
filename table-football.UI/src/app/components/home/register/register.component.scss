@@ -10,17 +10,17 @@
   background: #e5e5e530;
 
   .login_component {
-    width: 400px;
+    width: 350px;
     padding: 20px;
-    background: #fff;
+    background: #DFEBED;
     border-radius: 7px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
-    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    // -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    // -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    // box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
 
     svg {
       height: 60px;
@@ -30,11 +30,13 @@
     h1 {
       font-size: 25px;
       margin-bottom: 30px;
+      color: #2B4450;
     }
 
     input {
       width: 100%;
       padding: 8px;
+      height: 45px;
       outline: none;
       border-radius: 4px;
       border: 1px solid #DFDFDF;
@@ -60,7 +62,21 @@
       margin-bottom: 10px;
     }
 
+    .regist{
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .alert{
+      color: #2B4450;
+      padding-bottom: 5px;
+      font-weight: 100;
+    }
+
     .confirm_btn {
+      width: 190px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -68,15 +84,15 @@
       padding: 8px;
       border: none;
       border-radius: 7px;
-      color: #FFF;
-      background: #2DCC70;
+      color: #DFEBED;
+      background: #F78536;
       cursor: pointer;
       transition: 0.4s ease;
       font-weight: 500;
       letter-spacing: 0.5px;
 
       &:hover {
-        background: #22a65a;
+        background: #ff6a00;
       }
     }
     .register_question {
