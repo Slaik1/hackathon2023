@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
-  baseApiUrl: string = environment.baseApiUrl;// + '/user';
+  baseApiUrl: string = environment.baseApiUrl + 'user';
 
   constructor(
     private http: HttpClient,
@@ -18,5 +18,9 @@ export class UserService {
 
   getPlayingGroups(game_id : number) {
     return this.http.post(this.baseApiUrl + '/getPlayingUsers', game_id);
+  }
+
+  getUserInfo(username : string) {
+    return this.http.post(this.baseApiUrl + '/getUserInfo', username);
   }
 }

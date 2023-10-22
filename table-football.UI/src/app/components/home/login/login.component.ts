@@ -27,12 +27,12 @@ export class LoginComponent {
         if (response.access_token)
         {
           localStorage.setItem('access_token', response.access_token);
+          localStorage.setItem('username', response.username);
         }
         this.router.navigate(['']);
       },
         error: (response) => {
           console.log(response);
-          console.log(response.error.errorMessage);
       }
     });
   }
