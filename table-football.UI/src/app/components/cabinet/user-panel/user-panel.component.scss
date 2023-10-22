@@ -4,6 +4,9 @@
   align-items: center;
   padding: 20px;
   width: 100%;
+  background: #fff;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
 }
 
 .header a {
@@ -11,7 +14,7 @@
   margin-right: 20px;
   font-size: 20px;
   cursor: pointer;
-  color: #A0A8B1;
+  color: #2B4450;
   transition: all 0.3s ease;
 }
 

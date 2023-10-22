@@ -5,7 +5,7 @@
   max-width: 600px;
   min-width: 400px;
   padding: 40px 20px;
-  background: #DFEBED;
+  background: #fff;
   box-sizing: border-box;
   border-radius: 15px;
   -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
@@ -29,9 +29,8 @@
       width: 50px;
       height: 50px;
       cursor: pointer;
-      circle{
-        fill: #F78536;
-      }
+      fill: #2DCC70;
+
       path{
         fill: #DFEBED;
       }
@@ -50,11 +49,10 @@
     .nickname {
       color: #2B4450;
       font-size: 20px;
-      font-weight: 500;
     }
 
     p {
-      color: #2B4450;
+      color: #A0A8B1;
       font-size: 20px;
       font-weight: 400;
     }
