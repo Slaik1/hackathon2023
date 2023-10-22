@@ -1,7 +1,6 @@
 export interface GameModel {
     game_id: number,
     name: string,
-    mode: string,
     slots: number,
     status: string | null,
     current_round: number | null,
