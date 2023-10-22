@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
-  baseApiUrl: string = environment.baseApiUrl + '/user';;
+  baseApiUrl: string = environment.baseApiUrl;// + '/user';
 
   constructor(
     private http: HttpClient,
