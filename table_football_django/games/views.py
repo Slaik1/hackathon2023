@@ -1,10 +1,17 @@
-from django.http import JsonResponse
+from rest_framework import generics
+from rest_framework.response import Response
+from rest_framework.permissions import AllowAny
 from .models import Game
 from .serializers import GameSerializer
 
 
-def get_all_games(request):
-    games = Game.objects.all()
-    serializer = GameSerializer(games, many=True)
+class AllGames(generics.ListAPIView):
+    permission_classes = [AllowAny]
 
-    return JsonResponse({'games': serializer.data}, safe=False)
+    queryset = Game.objects.all()
+    serializer_class = GameSerializer
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        serializer = self.get_serializer(queryset, many=True)
+        return Response(serializer.data)
