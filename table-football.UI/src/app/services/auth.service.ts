@@ -24,8 +24,7 @@ export class AuthService {
   }
 
   confirm() {
-    var headers = this.headersInit();
-    this.http.post<UserModel>(this.baseApiUrl + '/Confirm', { headers: headers })
+    this.http.post<UserModel>(this.baseApiUrl + '/Confirm', localStorage.getItem('access_token'))
     .subscribe({
       next: (response: any) => {
         console.log(response.status);
@@ -41,16 +40,6 @@ export class AuthService {
   }
 
   logout() {
-    var headers = this.headersInit();
-    return this.http.post<UserModel>(this.baseApiUrl + '/Logout', { headers: headers });
-  }
-
-  headersInit(): HttpHeaders {
-    const accessToken = localStorage.getItem('access_token');
-    if (accessToken)
-      var headers = new HttpHeaders().set('Authorization', 'Bearer ' + accessToken);
-    else
-      var headers = new HttpHeaders();
-      return headers
+    return this.http.post<UserModel>(this.baseApiUrl + '/Logout', localStorage.getItem('access_token'));
   }
 }
