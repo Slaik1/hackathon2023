@@ -6,13 +6,13 @@ import { environment } from 'src/environment';
   providedIn: 'root'
 })
 export class GameService {
-  baseApiUrl: string = environment.baseApiUrl + '/game';
+  baseApiUrl: string = environment.baseApiUrl;// + '/game';
 
   constructor(
     private http: HttpClient,
   ) { }
 
   getGames() {
-      return this.http.get(this.baseApiUrl + '/getGames');
+      return this.http.get(this.baseApiUrl + '/getGame');//s
   }
 }
