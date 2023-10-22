@@ -26,10 +26,8 @@ export class LoginComponent {
       next: (response: any) => {
         if (response.accessToken)
         {
-          localStorage.setItem('accessToken', response.accessToken);
+          localStorage.setItem('access_token', response.accessToken);
         }
-        localStorage.setItem('isLoggedIn', '+')
-        this.appComponent.isLoggedIn = true;
         this.router.navigate(['']);
       },
         error: (response) => {
