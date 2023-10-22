@@ -5,7 +5,7 @@ import {CabinetComponent} from "./components/cabinet/cabinet.component";
 import { LoginComponent } from './components/home/login/login.component';
 import { RegisterComponent } from './components/home/register/register.component';
 import { AuthGuard } from './services/auth.guard';
-import { GameDetailsComponent } from './components/game-details/game-details.component';
+import { GameDetailsComponent } from './components/home/game-details/game-details.component';
 
 
 const routes: Routes = [
