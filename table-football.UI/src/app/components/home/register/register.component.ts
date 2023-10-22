@@ -26,8 +26,10 @@ export class RegisterComponent {
     this.authService.register(this.regAccountModel)
     .subscribe({
       next: (response: any) => {
-        localStorage.setItem('isLoggedIn', '+')
-        this.appComponent.isLoggedIn = true;
+        if (response.accessToken)
+        {
+          localStorage.setItem('access_token', response.accessToken);
+        }
         this.router.navigate(['']);
       },
         error: (response) => {

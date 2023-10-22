@@ -23,6 +23,7 @@ import { CreateGameComponent } from './components/home/create-game/create-game.c
 import { UserInfoComponent } from './components/home/user-info/user-info.component';
 import { TeamComponent } from './components/cabinet/user-panel/team/team.component';
 import { GameDetailsComponent } from './components/home/game-details/game-details.component';
+import { CreateGameFormComponent } from './components/home/create-game/create-game-form/create-game-form.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { GameDetailsComponent } from './components/home/game-details/game-detail
     UserInfoComponent,
     TeamComponent,
     GameDetailsComponent,
+    CreateGameFormComponent,
   ],
   imports: [
     BrowserModule,
