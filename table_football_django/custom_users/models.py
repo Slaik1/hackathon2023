@@ -7,7 +7,7 @@ from django.dispatch import receiver
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     userpic = models.ImageField(upload_to='userpics/', blank=True, null=True)
-    rating = models.IntegerField(default=0)
+    points = models.IntegerField(default=0)
     game_id = models.IntegerField(blank=True, null=True)
 
 
