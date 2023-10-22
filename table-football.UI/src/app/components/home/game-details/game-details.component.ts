@@ -9,12 +9,15 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class GameDetailsComponent {
     users: UserModel[] = [];
+    numbers: number[] = [];
 
     constructor(
       private userService: UserService,
       ) { }
+
   
       ngOnInit(): void {
+        this.numbers = Array.from(Array(32/2), (x,i)=> i=x+2)
         this.getTopUsers();
       }
   
