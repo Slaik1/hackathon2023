@@ -2,13 +2,16 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 50px 36px;
-  background: #DFEBED;
+  padding: 40px 30px;
+  background: #ffffff;
   max-width: 300px;
-  border-radius: 20px;
+  border-radius: 7px;
+  -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
 
   p {
-    margin-bottom: 41px;
+    margin-bottom: 20px;
     font-size: 20px;
     line-height: 23px;
     color: #959FA8;
@@ -22,14 +25,14 @@ section {
     border: none;
     border-radius: 7px;
     color: #FFF;
-    background: #F78536;
+    background: #2DCC70;
     cursor: pointer;
     transition: 0.4s ease;
     font-weight: 500;
     letter-spacing: 0.5px;
 
     &:hover {
-      background: #ff6a00;
+      background: #26a45b;
     }
   }
 }

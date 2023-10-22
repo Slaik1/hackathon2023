@@ -1,16 +1,18 @@
 .wrapper {
   width: 300px;
-  height: 331px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 32px;
-  background: #DFEBED;
+  padding: 30px 20px 20px 20px;
+  background: #fff;
+   -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+   -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+   box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
   border-radius: 7px;
 
   .nick {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #2B4450;
   }
 
@@ -29,7 +31,7 @@
 
     p {
       font-size: 24px;
-      color: #2B4450;
+      color: #959FA8;
     }
 
     svg {
@@ -37,9 +39,4 @@
       height: 37px;
     }
   }
-
-
-
-
-
 }
