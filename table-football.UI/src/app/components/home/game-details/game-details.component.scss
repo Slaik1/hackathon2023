@@ -1,7 +1,7 @@
 .schema {
   margin-top: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 620px;
   width: 1450px;
@@ -16,13 +16,13 @@
 
   .tour {
     height: 700px;
-    margin-left: 60px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
     .round {
-
+      width: 134px;
 
       .teamWrapper {
         height: 27px;
@@ -43,18 +43,15 @@
         }
 
         .input {
-          width: 100px;
+          width: 60px;
           margin-right: 5px;
           outline: none;
 
         }
 
         .score {
-          width: 40px;
-
-
+          width: 35px;
         }
-
       }
     }
   }
@@ -68,11 +65,13 @@
   .tour {
     margin-left: 60px;
     height: 700px;
-    margin-left: 60px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
     .round {
+      width: 134px;
 
       .teamWrapper {
         height: 27px;
@@ -93,18 +92,15 @@
         }
 
         .input {
-          width: 100px;
+          width: 60px;
           margin-right: 5px;
           outline: none;
 
         }
 
         .score {
-          width: 40px;
-
-
+          width: 35px;
         }
-
       }
     }
   }

@@ -58,11 +58,15 @@
               </ul>
             </div>
           <div class="tour">
-            <ul class="round">
-              <li class="teamtop">29</li>
-              <li class="scoreTeamtop">1</li>
-              <li class="teambot">30</li>
-              <li class="scoreTeambot">0</li>
+            <ul class="round" *ngFor="let number of fourTour1; let i = index">
+              <div class="teamWrapper">
+                <li><input class="input" type="text" value="" id="{{number}}" required/></li>
+                <li><input class="score" type="number" value="0" id="{{number+1}}" required/></li>
+              </div>
+              <div class="teamWrapper">
+                <li><input class="input" type="text" value="" id="{{number+2}}" required/></li>
+                <li><input class="score" type="number" value="1" id="{{number+3}}" required/></li>
+              </div>
             </ul>
           </div>
         </div>
