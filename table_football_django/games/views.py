@@ -4,7 +4,7 @@ from .serializers import GameSerializer
 
 
 def get_all_games(request):
-    users = Game.objects.all()
-    serializer = GameSerializer(users, many=True)
+    games = Game.objects.all()
+    serializer = GameSerializer(games, many=True)
 
     return JsonResponse({'games': serializer.data}, safe=False)
