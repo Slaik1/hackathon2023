@@ -7,14 +7,16 @@
   padding: 20px;
 
   .block {
-
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #DFEBED;
+    background: #ffffff;
     border-radius: 5px;
+    -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
 
     img {
       width: 100px;
@@ -24,7 +26,8 @@
     }
 
     .title {
-      font-size: 24px;
+      font-size: 20px;
+      color: #A0A8B1;
     }
   }
 }
