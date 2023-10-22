@@ -21,7 +21,6 @@ export class GameComponent {
 
   getGames() {
     this.games = [];
-    console.log('АХХАХАХА ЭТО ЛОГ');
     this.gameService.getGames()
     .subscribe({
       next: (response: any) => {

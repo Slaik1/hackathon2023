@@ -11,8 +11,7 @@ import { LoginComponent } from './components/home/login/login.component';
 import { RegisterComponent } from './components/home/register/register.component';
 import { CabinetComponent } from './components/cabinet/cabinet.component';
 import { HeroComponent } from './components/home/hero/hero.component';
-import { GameListComponent } from './components/game-list/game-list.component';
-import { GameComponent } from './components/game-list/game/game.component';
+import { GameComponent } from './components/game/game.component';
 import { PreloaderComponent } from './components/preloader/preloader.component';
 import { UserProfileComponent } from './components/cabinet/user-profile/user-profile.component';
 import { UserPanelComponent } from './components/cabinet/user-panel/user-panel.component';
@@ -34,7 +33,6 @@ import { CreateGameFormComponent } from './components/home/create-game/create-ga
     RegisterComponent,
     CabinetComponent,
     HeroComponent,
-    GameListComponent,
     GameComponent,
     PreloaderComponent,
     UserProfileComponent,
