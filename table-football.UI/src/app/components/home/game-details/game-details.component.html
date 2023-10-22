@@ -22,27 +22,35 @@
     <div class="schema">
         <div class="leftSide">
             <div class="oneTour">
-                <ul class="matchupOneround" *ngFor="let number of oneTour; let i = index">
-                    <li><input class="input teamtop" type="text" value="" id="{{i}}" required/></li>
-                    <li><input class="score scoreTeamtop" type="number" value="0" id="{{i+1}}" required/></li>
-                    <li><input class="input teambot" type="text" value="" id="{{i+2}}" required/></li>
-                    <li><input class="score scoreTeambot" type="number" value="1" id="{{i+3}}" required/></li>
+                <ul class="matchupOneround" *ngFor="let number of oneTour1; let i = index">
+                    <li><input class="input teamtop" type="text" value="" id="{{number}}" required/></li>
+                    <li><input class="score scoreTeamtop" type="number" value="0" id="{{number+1}}" required/></li>
+                    <li><input class="input teambot" type="text" value="" id="{{number+2}}" required/></li>
+                    <li><input class="score scoreTeambot" type="number" value="1" id="{{number+3}}" required/></li>
                 </ul>
             </div>
             <div class="twoTour">
-                <ul class="matchupOneround" *ngFor="let number of twoTour; let i = index">
-                    <li><input class="input teamtop" type="text" value="" id="{{i}}" required/></li>
-                    <li><input class="score scoreTeamtop" type="number" value="0" id="{{i+1}}" required/></li>
-                    <li><input class="input teambot" type="text" value="" id="{{i+2}}" required/></li>
-                    <li><input class="score scoreTeambot" type="number" value="1" id="{{i+3}}" required/></li>
+                <ul class="matchupOneround" *ngFor="let number of twoTour1; let i = index">
+                    <li><input class="input teamtop" type="text" value="" id="{{number}}" required/></li>
+                    <li><input class="score scoreTeamtop" type="number" value="0" id="{{number+1}}" required/></li>
+                    <li><input class="input teambot" type="text" value="" id="{{number+2}}" required/></li>
+                    <li><input class="score scoreTeambot" type="number" value="1" id="{{number+3}}" required/></li>
                 </ul>
             </div>
             <div class="threeTour">
-                <ul class="matchupOneround" *ngFor="let number of threeTour; let i = index">
-                    <li><input class="input teamtop" type="text" value="" id="{{i}}" required/></li>
-                    <li><input class="score scoreTeamtop" type="number" value="0" id="{{i+1}}" required/></li>
-                    <li><input class="input teambot" type="text" value="" id="{{i+2}}" required/></li>
-                    <li><input class="score scoreTeambot" type="number" value="1" id="{{i+3}}" required/></li>
+                <ul class="matchupOneround" *ngFor="let number of threeTour1; let i = index">
+                    <li><input class="input teamtop" type="text" value="" id="{{number}}" required/></li>
+                    <li><input class="score scoreTeamtop" type="number" value="0" id="{{number+1}}" required/></li>
+                    <li><input class="input teambot" type="text" value="" id="{{number+2}}" required/></li>
+                    <li><input class="score scoreTeambot" type="number" value="1" id="{{number+3}}" required/></li>
+                </ul>
+            </div>
+            <div class="fourTour">
+                <ul class="matchupOneround" *ngFor="let number of fourTour1; let i = index">
+                    <li><input class="input teamtop" type="text" value="" id="{{number}}" required/></li>
+                    <li><input class="score scoreTeamtop" type="number" value="0" id="{{number+1}}" required/></li>
+                    <li><input class="input teambot" type="text" value="" id="{{number+2}}" required/></li>
+                    <li><input class="score scoreTeambot" type="number" value="1" id="{{number+3}}" required/></li>
                 </ul>
             </div>
         </div>
@@ -53,108 +61,38 @@
                 <li class="teambot">30</li>
                 <li class="scoreTeambot">0</li>
             </ul>
-            <ul class="matchupOneround">
-                <li class="teamtop">29</li>
-                <li class="scoreTeamtop">1</li>
-                <li class="teambot">30</li>
-                <li class="scoreTeambot">0</li>
-            </ul>
-            <ul class="matchupOneround">
-                <li class="teamtop">29</li>
-                <li class="scoreTeamtop">1</li>
-                <li class="teambot">30</li>
-                <li class="scoreTeambot">0</li>
-            </ul>
         </div>
         <div class="rightSide">
-            <div class="threeTour">
-                <ul class="matchupThreeround">
-                    <li class="teamtop">31</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">32</li>
-                    <li class="scoreTeambot">0</li>
+            <div class="fourTour">
+                <ul class="matchupOneround" *ngFor="let number of fourTour1; let i = index">
+                    <li><input class="input teamtop" type="text" value="" id="{{number}}" required/></li>
+                    <li><input class="score scoreTeamtop" type="number" value="0" id="{{number+1}}" required/></li>
+                    <li><input class="input teambot" type="text" value="" id="{{number+2}}" required/></li>
+                    <li><input class="score scoreTeambot" type="number" value="1" id="{{number+3}}" required/></li>
                 </ul>
-                <ul class="matchupThreeround">
-                    <li class="teamtop">33</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">34</li>
-                    <li class="scoreTeambot">0</li>
+            </div>
+            <div class="threeTour">
+                <ul class="matchupOneround" *ngFor="let number of threeTour1; let i = index">
+                    <li><input class="input teamtop" type="text" value="" id="{{i}}" required/></li>
+                    <li><input class="score scoreTeamtop" type="number" value="0" id="{{i+1}}" required/></li>
+                    <li><input class="input teambot" type="text" value="" id="{{i+2}}" required/></li>
+                    <li><input class="score scoreTeambot" type="number" value="1" id="{{i+3}}" required/></li>
                 </ul>
             </div>
             <div class="twoTour">
-                <ul class="matchupTworound">
-                    <li class="teamtop">35</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">36</li>
-                    <li class="scoreTeambot">0</li>
-                </ul>
-                <ul class="matchupTworound">
-                    <li class="teamtop">37</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">38</li>
-                    <li class="scoreTeambot">0</li>
-                </ul>            
-                <ul class="matchupTworound">
-                    <li class="teamtop">39</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">40</li>
-                    <li class="scoreTeambot">0</li>
-                </ul>
-                <ul class="matchupTworound">
-                    <li class="teamtop">41</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">42</li>
-                    <li class="scoreTeambot">0</li>
+                <ul class="matchupOneround" *ngFor="let number of twoTour1; let i = index">
+                    <li><input class="input teamtop" type="text" value="" id="{{i}}" required/></li>
+                    <li><input class="score scoreTeamtop" type="number" value="0" id="{{i+1}}" required/></li>
+                    <li><input class="input teambot" type="text" value="" id="{{i+2}}" required/></li>
+                    <li><input class="score scoreTeambot" type="number" value="1" id="{{i+3}}" required/></li>
                 </ul>
             </div>
             <div class="oneTour">
-                <ul class="matchupOneround">
-                    <li class="teamtop">43</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">44</li>
-                    <li class="scoreTeambot">0</li>
-                </ul>
-                <ul class="matchupOneround">
-                    <li class="teamtop">45</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">46</li>
-                    <li class="scoreTeambot">0</li>
-                </ul>            
-                <ul class="matchupOneround">
-                    <li class="teamtop">47</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">48</li>
-                    <li class="scoreTeambot">0</li>
-                </ul>
-                <ul class="matchupOneround">
-                    <li class="teamtop">49</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">50</li>
-                    <li class="scoreTeambot">0</li>
-                </ul>            
-                <ul class="matchupOneround">
-                    <li class="teamtop">51</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">52</li>
-                    <li class="scoreTeambot">0</li>
-                </ul>
-                <ul class="matchupOneround">
-                    <li class="teamtop">53</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">54</li>
-                    <li class="scoreTeambot">0</li>
-                </ul>            
-                <ul class="matchupOneround">
-                    <li class="teamtop">55</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">56</li>
-                    <li class="scoreTeambot">0</li>
-                </ul>
-                <ul class="matchupOneround">
-                    <li class="teamtop">57</li>
-                    <li class="scoreTeamtop">1</li>
-                    <li class="teambot">58</li>
-                    <li class="scoreTeambot">0</li>
+                <ul class="matchupOneround" *ngFor="let number of oneTour1; let i = index">
+                    <li><input class="input teamtop" type="text" value="" id="{{i}}" required/></li>
+                    <li><input class="score scoreTeamtop" type="number" value="0" id="{{i+1}}" required/></li>
+                    <li><input class="input teambot" type="text" value="" id="{{i+2}}" required/></li>
+                    <li><input class="score scoreTeambot" type="number" value="1" id="{{i+3}}" required/></li>
                 </ul>
             </div>
         </div>

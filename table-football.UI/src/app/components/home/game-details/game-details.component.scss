@@ -1,104 +1,109 @@
-.general
-{
+.general {
     display: inline-flex;
     margin-left: 0px;
     padding-left: 0px;
 }
-.schema
-{
+.schema {
     display: grid;
     grid-template-columns: 578px 192px 578px;
     background-color: #DFEBED;
     height: 620px;
-    width: 1350px;
+    width: 1450px;
     margin-left: 0px;
     padding-left: 0%;
     border: 1px solid #497285;
     border-radius: 30px;
 }
-.leftSide
-{
+.leftSide {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
 }
-.rightSide
-{
+.rightSide {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
 }
-.oneTour
-{
+.oneTour {
     padding-top: 0px;
 }
-.twoTour
-{
+.twoTour {
     padding-top: 80px;
     padding-bottom: 140px;
-
 }
-.threeTour
-{
+.threeTour {
     padding-top: 110px;
-    
 }
-.matchupOneround
-{
+.fourTour {
+    padding-top: 150px;
+}
+.midSide {
+    padding-top: 253px;
+}
+
+.matchupOneround {
     display: grid;
     grid-template-columns: 129px 20px;
     border-radius: 30px;
     background-color: #D9D9D9;
-    margin-left:18px;
-    margin-right:18px;
+    margin-left:8px;
+    margin-right:8px;
     margin-top: 35px;
     width: 159px;
     height: 38px;
     border: 1px solid #497285;
 }
-.matchupTworound
-{
+.matchupTworound {
     display: grid;
     grid-template-columns: 129px 20px;
     border-radius: 30px;
     background-color: #D9D9D9;
-    margin-left:16px;
-    margin-right:18px;
+    margin-left:8px;
+    margin-right:8px;
     margin-top: 0px;
     margin-bottom: 105px;
     width: 159px;
     height: 38px;
     border: 1px solid #497285;
 }
-.matchupThreeround
-{
+.matchupThreeround {
     display: grid;
     grid-template-columns: 129px 20px;
     border-radius: 30px;
     background-color: #D9D9D9;
-    margin-left:18px;
-    margin-right:18px;
+    margin-left:8px;
+    margin-right:8px;
     margin-top: 50px;
     margin-bottom: 240px;
     width: 159px;
     height: 38px;
     border: 1px solid #497285;
 }
-.teamtop
-{
+.matchupFourround {
+    display: grid;
+    grid-template-columns: 129px 20px;
+    border-radius: 30px;
+    background-color: #D9D9D9;
+    margin-left:8px;
+    margin-right:8px;
+    margin-top: 50px;
+    margin-bottom: 340px;
+    width: 159px;
+    height: 38px;
+    border: 1px solid #497285;
+}
+.teamtop {
     width: 139px;
     height: 19px;
     border-bottom:1px solid #497285  ;
     text-align: center;
 }
-.teambot
-{
+.teambot {
     width: 138px;
     height: 19px;
     text-align: center;
 }
-.scoreTeamtop
-{
+.scoreTeamtop {
     text-align: left;
     width: 28px;
     height: 19px;
@@ -106,8 +111,7 @@
     border-bottom:1px solid #497285 ;
     border-left:1px solid #497285 ;
 }
-.scoreTeambot
-{
+.scoreTeambot {
     text-align: left;
     padding-left:0px;
     margin-bottom: 0 px;
@@ -116,10 +120,6 @@
     padding-left:3px;
 
     border-left:1px solid #497285 ;
-}
-.midSide
-{
-    padding-top: 253px;
 }
 
 section {
