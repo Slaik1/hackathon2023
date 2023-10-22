@@ -48,12 +48,12 @@ class RegisterView(APIView):
 
 class AccountConfirmView(TokenVerifyView):
     def post(self, request):
-        token = request.data.get('Bearer')
+        token = request.data.get('access_token')
 
         if not token:
             return Response({'error': 'Token not provided'}, status=status.HTTP_400_BAD_REQUEST)
 
-        token_verify_response = self.verify_token(token)
+        token_verify_response = super().post(request)
 
         if token_verify_response.status_code == status.HTTP_200_OK:
             return Response({'message': 'Token is valid'}, status=status.HTTP_200_OK)
@@ -63,7 +63,7 @@ class AccountConfirmView(TokenVerifyView):
 
 class LogOutView(APIView):
     def post(self, request):
-        access_token = request.data.get('Bearer')
+        access_token = request.data.get('access_token')
 
         if not access_token:
             return Response({'error': 'Access token not provided'}, status=status.HTTP_400_BAD_REQUEST)
