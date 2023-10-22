@@ -53,7 +53,7 @@ class AccountConfirmView(TokenVerifyView):
         if not token:
             return Response({'error': 'Token not provided'}, status=status.HTTP_400_BAD_REQUEST)
 
-        token_verify_response = self.verify_token(token)
+        token_verify_response = super().post(request)
 
         if token_verify_response.status_code == status.HTTP_200_OK:
             return Response({'message': 'Token is valid'}, status=status.HTTP_200_OK)
