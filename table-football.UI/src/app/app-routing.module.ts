@@ -20,7 +20,7 @@ const routes: Routes = [
   {
     path: 'cabinet',
     component: CabinetComponent,
-    //canActivate: [AuthGuard],
+    canActivate: [AuthGuard],
   },
   {
     path: 'login',

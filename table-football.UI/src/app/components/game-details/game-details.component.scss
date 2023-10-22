@@ -1,5 +1,4 @@
-.schema
-{
+.schema {
     display: grid;
     grid-template-columns: 578px 192px 578px;
     background-color: #DFEBED;
@@ -10,36 +9,27 @@
     border: 1px solid #497285;
     border-radius: 30px;
 }
-.leftSide
-{
+.leftSide {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
 }
-.rightSide
-{
+.rightSide {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
 }
-.oneTour
-{
+.oneTour {
     padding-top: 0px;
 }
-.twoTour
-{
+.twoTour {
     padding-top: 80px;
     padding-bottom: 140px;
-
 }
-.threeTour
-{
-    padding-top: 110px;
-    
+.threeTour {
+    padding-top: 110px;    
 }
-.matchupOneround
-{
-
+.matchupOneround {
     display: grid;
     grid-template-columns: 129px 20px;
     border-radius: 30px;
@@ -51,9 +41,7 @@
     height: 38px;
     border: 1px solid #497285;
 }
-.matchupTworound
-{
-
+.matchupTworound {
     display: grid;
     grid-template-columns: 129px 20px;
     border-radius: 30px;
@@ -68,7 +56,6 @@
 }
 .matchupThreeround
 {
-
     display: grid;
     grid-template-columns: 129px 20px;
     border-radius: 30px;
