@@ -4,5 +4,7 @@
   <a (click)="onTabClick(2)">Настройки</a>
 </div>
 <app-team *ngIf="activeTab === 0"></app-team>
-<app-statistic *ngIf="activeTab === 1"></app-statistic>
+<div class="di">
+  <app-statistic *ngIf="activeTab === 1"></app-statistic>
+</div>
 <app-settings *ngIf="activeTab === 2"></app-settings>
