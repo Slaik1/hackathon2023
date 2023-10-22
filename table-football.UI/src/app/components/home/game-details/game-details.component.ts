@@ -9,15 +9,21 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class GameDetailsComponent {
     users: UserModel[] = [];
-    numbers: number[] = [];
+    oneTour: number[] = [];
+    twoTour: number[] = [];
+    threeTour: number[] = [];
+    start: number = 0
 
     constructor(
       private userService: UserService,
       ) { }
 
-  
+      
+      
       ngOnInit(): void {
-        this.numbers = Array.from(Array(32/2), (x,i)=> i=x+2)
+        this.oneTour = Array.from({ length: (32 - this.start) / 4 + 1 }, (_, i) => this.start + i * 4); this.start += 32;
+        this.twoTour = Array.from({ length: (16 - this.start) / 4 + 1 }, (_, i) => this.start + i * 4); this.start += 16;
+        this.threeTour = Array.from({ length: (8 - this.start) / 4 + 1 }, (_, i) => this.start + i * 4); this.start += 8;
         this.getTopUsers();
       }
   
