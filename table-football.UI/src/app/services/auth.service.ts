@@ -24,7 +24,7 @@ export class AuthService {
   }
 
   confirm() {
-    this.http.post<UserModel>(this.baseApiUrl + '/Confirm', localStorage.getItem('access_token'))
+    this.http.post<UserModel>(this.baseApiUrl + '/Confirm', { access_token: localStorage.getItem('access_token') })
     .subscribe({
       next: (response: any) => {
         console.log(response.status);
