@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-panel.component.scss']
 })
 export class UserPanelComponent {
+  activeTab = 0;
 
+  constructor() { }
+
+  ngOnInit() { }
+
+  onTabClick(index: number) {
+    this.activeTab = index;
+  }
 }

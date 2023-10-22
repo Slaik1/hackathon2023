@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.header p {
+.header a {
   position: relative;
   margin-right: 20px;
   font-size: 20px;
@@ -15,7 +15,7 @@
   transition: all 0.3s ease;
 }
 
-.header p.active::after {
+.header a.active::after {
   content: '';
   position: absolute;
   left: 0;
@@ -25,6 +25,6 @@
   background-color: #2DCC70;
 }
 
-.header p:hover {
+.header a:hover {
   color: #7a7b7c;
 }

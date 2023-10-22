@@ -9,7 +9,6 @@ import { RegAccountModel } from '../interfaces/regAccount.model';
   providedIn: 'root'
 })
 export class AuthService {
-  isLoggedIn = true;
   baseApiUrl: string = environment.baseApiUrl + '/Account';
 
   constructor(
@@ -24,14 +23,26 @@ export class AuthService {
     return this.http.post(this.baseApiUrl + '/Register', account, )
   }
 
-  accountConfirm() {
+  confirm() {
     var headers = this.headersInit();
-    return this.http.get<UserModel>(this.baseApiUrl + '/AccountConfirm', { headers: headers });
+    this.http.post<UserModel>(this.baseApiUrl + '/Confirm', { headers: headers })
+    .subscribe({
+      next: (response: any) => {
+        console.log(response);
+        if (response.userName)
+          return true
+        else
+          return false
+      },
+      error: (response) => {
+        console.log(response);
+      }
+    });
   }
 
   logout() {
     var headers = this.headersInit();
-    return this.http.get<UserModel>(this.baseApiUrl + '/Logout', { headers: headers });
+    return this.http.post<UserModel>(this.baseApiUrl + '/Logout', { headers: headers });
   }
 
   headersInit(): HttpHeaders {

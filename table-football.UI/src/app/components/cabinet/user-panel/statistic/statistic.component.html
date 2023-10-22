@@ -1,1 +1,8 @@
-<p>statistic works!</p>
+<section class="list_wrapper" *ngIf="games.length != 0; else errorBlock">
+    <app-game *ngFor="let game of games; let i = index" [game]="game"></app-game>
+  </section>
+  <ng-template #errorBlock>
+    <div class="list_wrapper">
+      <app-game [game]="null"></app-game>
+    </div>
+  </ng-template>
