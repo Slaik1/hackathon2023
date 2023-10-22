@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { GameModel } from 'src/app/interfaces/game.model';
 import { GameService } from 'src/app/services/game.service';
 

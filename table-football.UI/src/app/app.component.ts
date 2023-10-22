@@ -15,18 +15,6 @@ constructor(
 ) {}
 
   ngOnInit(): void {
-    this.authService.confirm()
-    .subscribe({
-      next: (response: any) => {
-        console.log(response);
-        if (response.userName)
-        {
-          this.isLoggedIn = true
-        }
-      },
-      error: (response) => {
-        console.log(response);
-      }
-    });
+    
   }
 }
